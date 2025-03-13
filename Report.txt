@@ -1,0 +1,68 @@
+This report presents a detailed exploration of a dataset through data cleaning, univariate, bivariate, and multivariate analyses. The dataset consists of both numerical and categorical variables, and it includes missing values, duplicates, and outliers, which are addressed in the data cleaning process.
+
+2. Data Cleaning
+
+2.1 Loading and Inspecting the Dataset
+The dataset was loaded using the pandas library, and an initial inspection was performed using .head() and .info() to understand its structure.
+
+2.2 Handling Missing Values
+The dataset contained missing values in several columns. The handling strategy was:
+Dropping rows with too many missing values.
+Filling missing values in numerical columns with the median.
+Filling missing values in categorical columns with the mode.
+
+2.3 Removing Duplicates
+Duplicates were identified and removed using:
+
+2.4 Handling Outliers
+Outliers were detected using box plots and handled using the Interquartile Range (IQR) method.
+
+2.5 Standardizing Categorical Values
+Inconsistent categorical values were fixed:
+
+3.1 Summary Statistics
+Basic statistics were computed for numerical columns, including mean, median, standard deviation, skewness, and kurtosis.
+
+3.2 Frequency Distributions for Categorical Variables
+The distribution of categorical variables was analyzed using frequency counts and bar plots.
+
+3.3 Visualizing Distributions
+Histograms and box plots were used to explore the distribution of numerical variables.
+
+4. Bivariate Analysis
+
+Bivariate analysis explores relationships between two variables. This includes assessing correlations between numerical variables and understanding how categorical variables influence numerical values.
+
+4.1 Correlation Matrix for Numerical Variables
+A correlation matrix was used to identify numerical relationships between variables.
+
+4.2 Scatter Plots for Numerical Relationships
+Scatter plots visualize how two numerical variables relate.
+
+4.3 Comparing Categorical and Numerical Variables
+Box plots and violin plots compare distributions across categories.
+
+5. Multivariate Analysis
+
+Multivariate analysis examines interactions among multiple variables simultaneously, allowing us to uncover deeper insights into data patterns.
+
+5.1 Pair Plots
+Pair plots analyze multiple relationships simultaneously by plotting pairwise relationships between numerical variables.
+
+5.2 Heatmap for Multiple Relationships
+A heatmap visually represents correlations among multiple variables, highlighting strong positive or negative relationships.
+
+5.3 Grouped Comparisons
+Grouped comparisons help understand combined effects of multiple features, such as class, gender, and survival rates.
+
+6. Conclusion
+
+This report detailed the data cleaning process (handling missing values, duplicates, and outliers) and conducted univariate, bivariate, and multivariate analyses. The key findings include:
+Certain variables showed strong correlations.
+Outliers were detected and handled using statistical methods.
+Clear trends were observed in survival rates based on class and gender.
+Relationships between multiple variables were explored using heatmaps, pair plots, and grouped comparisons.
+This exploration lays the foundation for further analysis, including predictive modeling or feature engineering.
+
+
+
